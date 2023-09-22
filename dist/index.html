@@ -1,0 +1,561 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body class="m-0 p-0 box-border">
+    <!-- Navigation Bar -->
+    <nav
+      class="nav-bar bg-white fixed flex justify-between transition-all duration-300 h-20 z-10 items-center px-3 w-full lg:px-16 lg:py-7 lg:-pt-6"
+    >
+      <div class="flex items-center gap-0">
+        <img src="/Image/cap-1.png" class="h-20 right-0" />
+        <p
+          class="logo-text text-mainColor text-3xl font-extrabold -left-10 -ml-8"
+        >
+          Chef
+        </p>
+      </div>
+
+      <div class="hidden pg:flex">
+        <!-- Full Screen Navigation List -->
+        <ul class="flex font-bold bg-red-500 pg:bg-white">
+          <li class="">
+            <a
+              href="#home"
+              class="text-textColor duration-300 relative hover:text-mainColor mx-6"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#category"
+              class="text-textColor duration-300 relative hover:text-mainColor mx-3"
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a
+              href="#history"
+              class="text-textColor duration-300 relative hover:text-mainColor mx-3"
+              >Our History</a
+            >
+          </li>
+          <li>
+            <a
+              href="#popular"
+              class="text-textColor duration-300 relative hover:text-mainColor mx-3"
+              >Popular Items</a
+            >
+          </li>
+          <li>
+            <a
+              href="#test"
+              class="text-textColor duration-300 relative hover:text-mainColor mx-3"
+              >Testimonial</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-textColor duration-300 relative hover:text-mainColor mx-3"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="pg:hidden">
+        <!-- Menu Navigation List -->
+        <ul
+          class="nav-list fixed hidden font-bold bg-red-500 transition-all duration-300 rounded-b-lg flex-col py-5 top-20 w-screen gap-6 -left-full text-left px-8 pg:gap-0"
+        >
+          <li class="">
+            <a
+              href="#home"
+              class="home text-textColor hover:text-mainColor mx-0 pg:mx-5"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#category"
+              class="category text-textColor hover:text-mainColor mx-0 pg:mx-5"
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a
+              href="#history"
+              class="history text-textColor hover:text-mainColor mx-0 pg:mx-5"
+              >Our History</a
+            >
+          </li>
+          <li>
+            <a
+              href="#popular"
+              class="popular text-textColor hover:text-mainColor mx-0 pg:mx-5"
+              >Popular Items</a
+            >
+          </li>
+          <li>
+            <a
+              href="#test"
+              class="test text-textColor hover:text-mainColor mx-0 pg:mx-5"
+              >Testimonial</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="contact text-textColor hover:text-mainColor my-10 mx-0 pg:mx-5 pg:my-0"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navigation Icons -->
+      <div class="header-icons text-2xl flex gap-3">
+        <a href="#" class="hover:text-mainColor"
+          ><i class="bx bx-search"></i
+        ></a>
+        <a href="#" class="hover:text-mainColor"><i class="bx bxs-bell"></i></a>
+        <a href="#" class="hover:text-mainColor"><i class="bx bxs-cart"></i></a>
+        <div class="lg:hidden">
+          <i
+            class="bx bx-menu hover:text-mainColor cursor-pointer"
+            id="menuBtn"
+          ></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- First Page -->
+    <section
+      class="grid pl-4 lg:flex lg:flex-row-reverse lg:items-center lg:px-40 lg:mp-6"
+      id="home"
+    >
+      <div class="w-full">
+        <!-- First Page Chef Image -->
+        <img src="/Image/chef-1.png" class="mt-20 lg:h-full lg:mt-14" />
+      </div>
+      <div class="mt-0">
+        <!-- First Page Section -->
+        <p
+          class="big-text text-4xl mr-12 tracking-wide font-extrabold pr-3 lg:font-bold lg:mr-10 lg:text-6xl"
+        >
+          Order Your Favorite Meal.
+        </p>
+        <p class="pr-4 my-3 mr-0 text-otherColor lg:mr-24">
+          We promise you will enjoy every sweet moment to find your favorite.
+          Eat what you love and save your time
+        </p>
+        <div class="flex items-center gap-10" id="category">
+          <a
+            href="#"
+            class="text-bbColor font-bold ease-in-out duration-300 bg-mainColor py-2 px-4 rounded-vs hover:scale-110"
+            >Place an order</a
+          >
+          <a
+            href="#"
+            class="flex items-center hover:scale-110 hover:duration-200"
+            ><img
+              src="/Image/play-2.png"
+              class="h-10 w-10 rounded-sm mr-2 bg-mainColor"
+            />
+            <p class="text-textColor font-bold">Watch Videos</p></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+
+    <section class="text-center py-9 lg:px-40" id="category">
+      <p class="text-mainColor font-bold">Categories</p>
+      <p
+        class="big-text text-3xl text-textColor font-bold lg:text-4xl lg:font-extrabold"
+      >
+        Our Categories Menu
+      </p>
+      <div class="lg:flex lg:justify-center">
+        <div class="mt-9">
+          <div class="flex justify-center h-2/4 lg:h-80">
+            <img src="/Image/food-1.png" class="" />
+          </div>
+          <div class="">
+            <p class="big-text text-2xl font-bold">Food Items</p>
+            <p class="text-otherColor mx-4">
+              Find your favorite meal, eat what you love and save your time, eat
+              what you love and save your time.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-9">
+          <div class="flex justify-center h-2/4 lg:h-80">
+            <img src="/Image/drink-1.png" class="" />
+          </div>
+          <div class="">
+            <p class="big-text text-2xl font-bold">Drinks Items</p>
+            <p class="text-otherColor mx-4">
+              Find your favorite meal, eat what you love and save your time, eat
+              what you love and save your time.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-9">
+          <div class="flex justify-center h-2/4 lg:h-80">
+            <img src="/Image/food-2.png" class="" />
+          </div>
+          <div class="">
+            <p class="big-text text-2xl font-bold">Food Items</p>
+            <p class="text-otherColor mx-4">
+              Find your favorite meal, eat what you love and save your time, eat
+              what you love and save your time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+
+    <section
+      class="text-left pl-4 py-8 lg:flex lg:justify-between lg:px-56 lg:items-center lg:py-0 lg:h-screen"
+      id="history"
+    >
+      <div class="mt-24 flex h-2/4 lg:h-4/5 lg:w-full lg:mt-0">
+        <img src="/Image/plate-3.png" class="" />
+      </div>
+      <div class="">
+        <div>
+          <p class="text-mainColor font-bold">Our History</p>
+          <p
+            class="big-text text-3xl text-textColor font-bold lg:mr-28 lg:text-4xl lg:font-extrabold"
+          >
+            Discover Our Glory Beginning
+          </p>
+          <p class="text-otherColor mr-3">
+            We promise you will enjoy every sweet moment to find your favorite,
+            eat what you love and save your time.
+          </p>
+        </div>
+        <div class="mt-7 flex">
+          <a
+            href="#"
+            class="text-bbColor font-bold ease-in-out duration-300 bg-mainColor py-2 px-4 rounded-vs hover:scale-110"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Items Section -->
+    <section class="text-center my-10 lg:px-36" id="popular">
+      <div>
+        <p class="text-mainColor font-bold">Our Popular Menu</p>
+        <p
+          class="big-text text-3xl text-textColor font-bold lg:text-4xl lg:font-extrabold"
+        >
+          Some Popular items
+        </p>
+      </div>
+
+      <div>
+        <div class="gap-0 lg:flex lg:justify-between">
+          <div class="m-8 p-5 lg:mx-1 shadow-2xl">
+            <div class="flex justify-center h-1/3 lg:h-3/4 lg:w-52">
+              <img src="/Image/plate-2.png" />
+            </div>
+            <div class="">
+              <p class="big-text font-extrabold text-xl">Sauce Dish</p>
+              <p class="text-mainColor font-extrabold my-0.5">$28.99</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-half.png" class="h-5" />
+            </div>
+          </div>
+          <div
+            class="m-8 p-5 lg:mx-1 rounded-vs shadow-2xl hover:-translate-y-2 duration-300"
+          >
+            <div class="flex justify-center h-1/3 lg:h-3/4 lg:w-52">
+              <img src="/Image/plate-1.png" />
+            </div>
+            <div class="">
+              <p class="big-text font-extrabold text-xl">Chicken Dish</p>
+              <p class="text-mainColor font-extrabold my-0.5">$28.99</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-5" />
+            </div>
+          </div>
+
+          <div
+            class="m-8 p-5 lg:mx-1 rounded-vs shadow-2xl hover:-translate-y-2 duration-300"
+          >
+            <div class="flex justify-center h-1/3 lg:h-3/4 lg:w-52">
+              <img src="/Image/plate-3.png" />
+            </div>
+            <div class="">
+              <p class="big-text font-extrabold text-xl">Omelet Dish</p>
+              <p class="text-mainColor font-extrabold my-0.5">$28.99</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-half.png" class="h-5" />
+            </div>
+          </div>
+
+          <div
+            class="m-8 p-5 lg:mx-1 rounded-vs shadow-2xl hover:-translate-y-2 duration-300"
+          >
+            <div class="flex justify-center h-1/3 lg:h-3/4 lg:w-52">
+              <img src="/Image/plate-4.png" />
+            </div>
+            <div class="">
+              <p class="big-text font-extrabold text-xl">Veggie Dish</p>
+              <p class="text-mainColor font-extrabold my-0.5">$28.99</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-1.png" class="h-6" />
+              <img src="/Image/star-none.png" class="h-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex lg:mt-10 items-center justify-center">
+        <a
+          href="#"
+          class="shadow-2xl text-bbColor font-bold ease-in-out duration-300 bg-mainColor py-2 px-4 rounded-vs hover:scale-110"
+          >More Items</a
+        >
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="text-center justify-center items-center lg:flex lg:justify-between lg:items-center lg:my-20 lg:text-left lg:px-56"
+      id="test"
+    >
+      <div class="lg:w-2/5 lg:">
+        <p class="text-mainColor font-bold">Testimonials</p>
+        <p
+          class="big-text text-3xl text-textColor mx-10 my-3 font-bold lg:text-4xl lg:font-extrabold lg:mx-0 lg:"
+        >
+          What People Say About Us
+        </p>
+      </div>
+      <div class="lg:ml-32 lg:w-3/5">
+        <div class="flex justify-center h-2/5 lg:h-40 lg:justify-normal">
+          <img src="/Image/person-1.png" class="" />
+        </div>
+        <div class="">
+          <p class="big-text font-extrabold text-xl">Julian Webster</p>
+          <p class="text-mainColor font-extrabold my-0.5">Texas, USA</p>
+          <p class="text-otherColor m-3 lg:ml-0 lg:mr-32">
+            "The taste was excellent, the service was good, very fast response.
+            The food was delicious, thank you so much."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="my-11 px-5">
+      <div class="">
+        <p
+          class="big-text text-3xl text-textColor text-center mx-4 my-3 font-bold lg:text-4xl lg:font-extrabold lg:mx-0 lg:"
+        >
+          Subscribe Newsletter
+        </p>
+      </div>
+      <form class="lg:flex lg:justify-center">
+        <div class="w-80 rounded-vs bg-bbColor lg:w-80">
+          <input
+            type="email"
+            required
+            class="py-3 pl-5 border-2 outline-none bg-transparent border-r-0 overflow-hidden border-transparent lg:px-3"
+            placeholder="enter your email..."
+          />
+          <input
+            type="submit"
+            class="text-bbColor font-bold ease-in-out duration-300 bg-mainColor py-2 px-4 rounded-vs hover:scale-105"
+            value="Subscribe"
+          />
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="lg:px-56 lg:flex lg:justify-between lg:mt-40 lg:mb-16"
+      id="contact"
+    >
+      <div class="px-3">
+        <div class="flex items-center gap-0">
+          <img src="/Image/cap-1.png" class="h-20 right-0 left-0" />
+          <p class="logo-text text-mainColor text-3xl font-extrabold -left-10">
+            Chef
+          </p>
+        </div>
+
+        <!-- Footer Icons -->
+        <div class="flex gap-3 my-4">
+          <div class="bg-mainColor rounded-vs hover:scale-105">
+            <a href="#"><img src="/Image/facbook-black.png" class="h-8" /></a>
+          </div>
+
+          <div class="bg-mainColor rounded-vs hover:scale-105">
+            <a href="#"><img src="/Image/tele-black.png" class="h-8" /></a>
+          </div>
+          <div class="bg-mainColor rounded-vs hover:scale-105">
+            <a href="#"><img src="/Image/insta-black.png" class="h-8" /></a>
+          </div>
+          <div class="bg-mainColor rounded-vs hover:scale-105">
+            <a href="#"><img src="/Image/youtube-black.png" class="h-8" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="px-3">
+        <p class="big-text text-xl text-textColor my-2 font-bold lg:mx-0 lg:">
+          Links
+        </p>
+        <ul class="flex flex-col gap-1 lg:gap-2">
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >Download</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >About</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-3">
+        <p class="big-text text-xl text-textColor my-2 font-bold lg:mx-0">
+          Support
+        </p>
+        <ul class="flex flex-col gap-1 lg:gap-2">
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >FAQs</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >How it works</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-3">
+        <p class="big-text text-xl text-textColor my-2 font-bold lg:mx-0">
+          Our Menu
+        </p>
+        <ul class="flex flex-col gap-1 lg:gap-2">
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >Burger</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >Pizza</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >Pasta</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base text-otherColor hover:text-mainColor duration-300"
+              >Indian kebab</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="text-center bg-bbColor mt-10 py-2">
+      <p class="text-otherColor">created by sherifd33n</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="darkmode.js"></script>
+  </body>
+</html>

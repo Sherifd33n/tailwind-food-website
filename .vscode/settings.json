@@ -1,0 +1,11 @@
+{
+  "cSpell.words": ["darkmode", "sherifd", "tailwindcss"],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-workspace": {
+      "name": "custom-dictionary-workspace",
+      "path": "${workspaceFolder:Tailwind3}/.cspell/custom-dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  }
+}

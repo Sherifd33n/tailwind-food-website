@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -main-color: #f24f04;
+  -text-color: #252429;
+  -bg-color: #fffefb;
+  -rr-color: #ffa50a;
+  -other-color: #95949a;
+  -bb-color: #fff2de;
+}
+
+.nav-list.open {
+  left: 0;
+  display: flex;
+  background: #fff2de;
+  box-shadow: 0 8px 8px rgb(0 0 0 /30%);
+}
+
+.nav-bar.open {
+  background: #fff2de;
+}
+
+.big-text {
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media (min-width: 976px) {
+  nav ul li a:hover::after {
+    content: "";
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    bottom: -15px;
+    left: 20%;
+    transition: 0.5s;
+    border-radius: 2px;
+    background: #f24f04;
+  }
+}
