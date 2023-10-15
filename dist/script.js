@@ -1,4 +1,4 @@
-let menuBtn = document.getElementById("menuBtn");
+const menuBtn = document.querySelector("#menu-Btn");
 const menu = document.querySelector(".nav-list");
 const nav = document.querySelector(".nav-bar");
 

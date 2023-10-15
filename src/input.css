@@ -11,6 +11,12 @@ body {
   -bb-color: #fff2de;
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 .nav-list.open {
   left: 0;
   display: flex;
